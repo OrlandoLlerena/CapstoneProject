@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+This project is for educational purposes only.
+
+# Jeopardy copyright aknowledgements
+
+© "JEOPARDY!" is a registered trademark of Jeopardy Productions, Inc. License: All Rights Reserved.
+
+# Art and Music Credits
+
+Jeopardy Title clip art free clip art @ clker.com
+Jeopardy Title https://abc11.com/news/jeopardy-is-on-112/1836820/
+Final Jeopardy & Double Jeopardy Art http://saundersamkinder.blogspot.com/2014/05/
+Jeopardy Question Theme https://archive.org/details/JeopardyTheme/Jeopardy.mp3

@@ -1,0 +1,124 @@
+// Display Breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1440px;
+
+// Colors Variables
+$blue: #060ce9;
+$Jroyalblue: #0000f2;
+$Jdarkblue: #0e0039;
+
+$Jyellow: #ffcc00;
+$Jgold: #ffd700;
+$Jorange: #fa9f3c;
+
+$Jdeeppurple: #20152e;
+$Jpurple: #610578;
+$Jfushia: #e500eb;
+
+$Jtan: #e1b6bc;
+
+$Jpink: #d63369;
+$Jred: #9b2b34;
+$Jdarkred: #622638;
+
+$Jgray: #857f83;
+$Jdarkgray: #474653;
+$Jsilver: #9ab4d0;
+
+// Fonts Variables
+// Font Weights
+$fontregular: 300;
+$fontbold: 400;
+$fontheavy: 700;
+
+// Desktop & Tablet Sizes
+$h1size: 3.75rem;
+$h1height: 4.25rem;
+$h2size: 3.75rem;
+$h2height: 4.25rem;
+$h3size: 3.75rem;
+$h3height: 4.25rem;
+$h4size: 3.75rem;
+$h4height: 4.25rem;
+$h5size: 3.75rem;
+$h5height: 4.25rem;
+$h6size: 3.75rem;
+$h6height: 4.25rem;
+
+// Mobile Sizes
+$h1mobilesize: 1.5rem;
+$h1mobileheight: 2rem;
+$h2mobilesize: 1.5rem;
+$h2mobileheight: 2rem;
+$h3mobilesize: 1.5rem;
+$h3mobileheight: 2rem;
+$h4mobilesize: 1.5rem;
+$h4mobileheight: 2rem;
+$h5mobilesize: 1.5rem;
+$h5mobileheight: 2rem;
+
+@font-face {
+  font-family: "Korinna";
+  src: url("../assets/Fonts/Korinna-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Swiss";
+  src: url("../assets/Fonts/swiss-911-extra-compr9c22f.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+//   @font-face {
+//     font-family: "AvenirBold";
+//     src: url("../assets/Fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Heavy.otf")
+//       format("opentype");
+//     font-weight: 700;
+//     font-style: normal;
+//   }
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-break) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-break) {
+    @content;
+  }
+}
+
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Details for rotation found in stack overflow:+
+// https://stackoverflow.com/questions/16771225/css3-rotate-animation
+// rotation snipet:
+// .image {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     width: 120px;
+//     height: 120px;
+//     margin:-60px 0 0 -60px;
+//     -webkit-animation:spin 4s linear infinite;
+//     -moz-animation:spin 4s linear infinite;
+//     animation:spin 4s linear infinite;
+// }
+// @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+// @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+// @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+// <img class="image" src="http://i.stack.imgur.com/pC1Tv.jpg" alt="" width="120" height="120
