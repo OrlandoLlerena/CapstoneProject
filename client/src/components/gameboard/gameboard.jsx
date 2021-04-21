@@ -1,11 +1,25 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./gameboard.scss";
 
 const gameboard = () => {
   // gonna add the hookin in this section here
 
+  // const [category, setCategory] = useState([]);
+  // const [clue, setClue] = useState([]);
+
   // Use effects and useState will go here
+  // useEffect(() => {
+  //   axios
+  //     .get(`add an api request here`)
+  //     .then((resp) => {
+  //       setCategory(resp.data.category);
+  //       setClue(resp.data.clue);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // });
 
   return (
     <section className="boardcontainer">

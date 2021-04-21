@@ -1,0 +1,1357 @@
+{
+  "id": 680,
+  "title": "mythology",
+  "clues_count": 135,
+  "clues": [
+    {
+      "id": 4887,
+      "answer": "goddess of wisdom",
+      "question": "Post held by Neith for the ancient Egyptians, Minverva for the Romans & Athena for the Greeks",
+      "value": 100,
+      "airdate": "1988-12-29T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 4899,
+      "answer": "3 Fates",
+      "question": "Clotho who spun the thread of life, Lachesis who measured its length & Atropos who cut it",
+      "value": 300,
+      "airdate": "1988-12-29T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 4905,
+      "answer": "Odin or Woden",
+      "question": "Norse myth predicted that this god, their chief deity, would eventually be eaten by a ferocious wolf",
+      "value": 400,
+      "airdate": "1988-12-29T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 4911,
+      "answer": "Psyche",
+      "question": "Because Venus was jealous, this lover of Cupid had to go through many trials before they were united",
+      "value": 500,
+      "airdate": "1988-12-29T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 5460,
+      "answer": "Thisbe",
+      "question": "Pyramus & she didn't have a ball for they were separated by a wall",
+      "value": 100,
+      "airdate": "1990-05-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 5466,
+      "answer": "Atlas",
+      "question": "Prometheus' brother, you may know the fact he was cursed to bear the sky upon his back",
+      "value": 200,
+      "airdate": "1990-05-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 5472,
+      "answer": "Mercury/Hermes",
+      "question": "Imagine that, he had wings on his hat; & we could add this bit of news -- he also had them on his shoes",
+      "value": 300,
+      "airdate": "1990-05-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 5478,
+      "answer": "Echo",
+      "question": "Juno cursed her, have you heard?  So she'll always have the very last word",
+      "value": 400,
+      "airdate": "1990-05-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 5484,
+      "answer": "Sisyphus",
+      "question": "In the underworld he's busy still pushing a rock to the top of a hill",
+      "value": 500,
+      "airdate": "1990-05-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 8907,
+      "answer": "Amazons",
+      "question": "Hercules had to fetch the girdle of Hippolyta, the queen of these women",
+      "value": 100,
+      "airdate": "1990-10-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 8913,
+      "answer": "Medusa",
+      "question": "She was once a mortal maiden, but Athena changed her curls into hissing serpents",
+      "value": 200,
+      "airdate": "1990-10-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 8919,
+      "answer": "Argo",
+      "question": "Name of the ship that carried the heroes searching for the golden fleece",
+      "value": 300,
+      "airdate": "1990-10-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 8925,
+      "answer": "Janus",
+      "question": "The main shrine of this Roman god of entrances had 2 doors & his 2-faced statue",
+      "value": 400,
+      "airdate": "1990-10-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 8931,
+      "answer": "Cassandra",
+      "question": "This daughter of Priam was given the gift of prophecy, then cursed so she was never believed",
+      "value": 500,
+      "airdate": "1990-10-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 9298,
+      "answer": "Sphinx",
+      "question": "It plagued Thebes by killing & eating anyone who didn't answer its riddle",
+      "value": 100,
+      "airdate": "1992-03-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 9304,
+      "answer": "hunter",
+      "question": "Orion's occupation",
+      "value": 200,
+      "airdate": "1992-03-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 9310,
+      "answer": "a thousand",
+      "question": "The number of Greek ships that went to Troy to get Helen back",
+      "value": 300,
+      "airdate": "1992-03-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 9316,
+      "answer": "nectar",
+      "question": "The Greek gods ate ambrosia & drank this to keep up their immortality",
+      "value": 400,
+      "airdate": "1992-03-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 9322,
+      "answer": "caduceus",
+      "question": "Hermes' winged sandals were the talaria & his staff, this",
+      "value": 500,
+      "airdate": "1992-03-18T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 10955,
+      "answer": "Hercules",
+      "question": "When his earthly labors were over, his immortal part ascended to Mount Olympus & married Hebe",
+      "value": 100,
+      "airdate": "1992-11-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 10961,
+      "answer": "the Labyrinth",
+      "question": "After slaying the minotaur, Theseus found his way out of this maze by following a thread",
+      "value": 200,
+      "airdate": "1992-11-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 10967,
+      "answer": "Hades",
+      "question": "While gathering flowers, Persephone was abducted by this underworld god & became his queen",
+      "value": 300,
+      "airdate": "1992-11-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 10973,
+      "answer": "Argo",
+      "question": "Ironically, Jason was killed when a piece of this ship fell & struck him on the head",
+      "value": 400,
+      "airdate": "1992-11-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 10979,
+      "answer": "Thebes",
+      "question": "Adrastus was the only one of the seven against this city who survived the expedition",
+      "value": 500,
+      "airdate": "1992-11-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 11493,
+      "answer": "Isis",
+      "question": "There's a temple for this Egyptian goddess preserved at Pompeii",
+      "value": 500,
+      "airdate": "1992-09-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 11469,
+      "answer": "rice",
+      "question": "Inari, not Uncle Ben, is the Japanese god of this food",
+      "value": 100,
+      "airdate": "1992-09-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 11475,
+      "answer": "goat",
+      "question": "Pan had the horns & hoofs of this animal",
+      "value": 200,
+      "airdate": "1992-09-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 11481,
+      "answer": "the sun",
+      "question": "Rulers in Egypt claimed descent from this heavenly body",
+      "value": 300,
+      "airdate": "1992-09-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 11487,
+      "answer": "Pluto",
+      "question": "The Greeks & the Romans used the same name for this god, though the Greeks also called him Hades",
+      "value": 400,
+      "airdate": "1992-09-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 13177,
+      "answer": "Odysseus",
+      "question": "Anticlea gave birth to this hero of \"The Odyssey\" near Mt. Neriton on the island of Ithaca",
+      "value": 100,
+      "airdate": "1996-07-17T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 13183,
+      "answer": "Pan",
+      "question": "This god of shepherds & flocks is depicted with a reed pipe",
+      "value": 200,
+      "airdate": "1996-07-17T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 13189,
+      "answer": "Hades",
+      "question": "Persephone, who reigned with him over the underworld, was his niece",
+      "value": 300,
+      "airdate": "1996-07-17T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 13195,
+      "answer": "Victoria Abril",
+      "question": "",
+      "value": null,
+      "airdate": "1996-07-17T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14285,
+      "answer": "Helen",
+      "question": "Some say this woman of Troy married Paris' brother Deiphobus after Paris' death",
+      "value": 100,
+      "airdate": "1996-01-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14291,
+      "answer": "Cyclops",
+      "question": "Poseidon's son Polyphemus was one of these one-eyed creatures",
+      "value": 200,
+      "airdate": "1996-01-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14297,
+      "answer": "Styx",
+      "question": "The name of this river of the underworld means \"hateful\" or \"abhorrent\"",
+      "value": 300,
+      "airdate": "1996-01-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14303,
+      "answer": "Wolf",
+      "question": "In Norse myth Fenris, one of these lupine animals, has jaws so huge they stretch from heaven to Earth",
+      "value": 400,
+      "airdate": "1996-01-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14309,
+      "answer": "Juno",
+      "question": "This wife of Jupiter was considered the queen of heaven",
+      "value": 500,
+      "airdate": "1996-01-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14435,
+      "answer": "future",
+      "question": "In Norse myth sisters known as the Norns represent the past, present & this",
+      "value": 100,
+      "airdate": "1995-12-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14441,
+      "answer": "a phoenix",
+      "question": "The Arabian wilderness was home to this bird that was reborn from its own ashes",
+      "value": 200,
+      "airdate": "1995-12-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14447,
+      "answer": "the Trojan Horse",
+      "question": "With Athena's help, Epeius built this object in which the Greeks hid",
+      "value": 300,
+      "airdate": "1995-12-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14453,
+      "answer": "Cerberus",
+      "question": "Orthrus, a two-headed dog who guarded the cattle of Geryon, was the brother of this Hades hound",
+      "value": 400,
+      "airdate": "1995-12-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 14459,
+      "answer": "Dionysus",
+      "question": "The Maenads were frenzied followers of this God of wine & vegetation",
+      "value": 500,
+      "airdate": "1995-12-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 15065,
+      "answer": "China",
+      "question": "In the legends of this country, Hsi Wang Mu keeps the peaches of immortality",
+      "value": 100,
+      "airdate": "1997-07-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 15071,
+      "answer": "Odin/Wotan",
+      "question": "This great Norse god is sometimes known by the epithet Baleygr, which means \"flaming-eyed\"",
+      "value": 200,
+      "airdate": "1997-07-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 15077,
+      "answer": "Aztecs",
+      "question": "In the mythology of these people, Yacatecutli was the god of traveling merchants",
+      "value": 300,
+      "airdate": "1997-07-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 15083,
+      "answer": "Osiris",
+      "question": "He had a wife, Isis & an evil brother, Set, who was sometimes represented as an ass",
+      "value": 400,
+      "airdate": "1997-07-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 15089,
+      "answer": "Sirens",
+      "question": "In early Greek art, these singing water nymphs had the bodies of birds & the faces of beautiful women",
+      "value": 500,
+      "airdate": "1997-07-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16178,
+      "answer": "Remus",
+      "question": "Romulus & this twin brother were grandsons of Numitor, King of Alba Longa",
+      "value": 100,
+      "airdate": "1997-05-26T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16184,
+      "answer": "Aztecs",
+      "question": "To these early people of Mexico, Ueuecoyotl was the god connected with revelry",
+      "value": 200,
+      "airdate": "1997-05-26T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16190,
+      "answer": "hammer",
+      "question": "We don't know if Tim Allen has a pet name for this tool, but Thor called his Mjollnir--Thunderbolt",
+      "value": 300,
+      "airdate": "1997-05-26T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16196,
+      "answer": "Circe",
+      "question": "In post Homeric stories, this sorceress bore Odysseus a son named Telegonus",
+      "value": 400,
+      "airdate": "1997-05-26T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16202,
+      "answer": "Helen",
+      "question": "Some say she was reunited with her husband Menelaus after the fall of Troy",
+      "value": 500,
+      "airdate": "1997-05-26T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16505,
+      "answer": "Mount Olympus",
+      "question": "According to tradition, Zeus' home was on this mountain on the Thessaly/Macedonia border",
+      "value": 100,
+      "airdate": "1997-05-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16511,
+      "answer": "Pandora",
+      "question": "One account had her opening a jar, not a box, but she still shuts it before hope escapes",
+      "value": 200,
+      "airdate": "1997-05-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16517,
+      "answer": "the Minotaur",
+      "question": "Asterius was the real name of this bull-headed creature",
+      "value": 300,
+      "airdate": "1997-05-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16523,
+      "answer": "swan",
+      "question": "After Zeus mated with Leda, disguised as this bird, Castor & Pollux were born in an egg",
+      "value": 400,
+      "airdate": "1997-05-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 16529,
+      "answer": "Arachne",
+      "question": "She & Athena had a weaving contest",
+      "value": 500,
+      "airdate": "1997-05-08T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 18905,
+      "answer": "Moon",
+      "question": "In Roman mythology Luna was a goddess of this heavenly body",
+      "value": 100,
+      "airdate": "1997-01-09T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 18911,
+      "answer": "Romulus & Remus",
+      "question": "They were the twin founders of Rome",
+      "value": 200,
+      "airdate": "1997-01-09T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 18917,
+      "answer": "Valhalla",
+      "question": "In Norse myth a she-goat called Heidrun provides mead for the slain heroes of this hall",
+      "value": 300,
+      "airdate": "1997-01-09T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 18923,
+      "answer": "Oedipus",
+      "question": "The name of this \"complex\" king is Greek for \"swollen foot\"",
+      "value": 400,
+      "airdate": "1997-01-09T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 18929,
+      "answer": "Bacchus/Dionysius",
+      "question": "This Olympian taught Greek mortals how to cultivate grapevines & make wine",
+      "value": 500,
+      "airdate": "1997-01-09T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19086,
+      "answer": "Cyclops",
+      "question": "The name of these creatures means \"Round-Eyed\"; they each had only one round eye",
+      "value": 100,
+      "airdate": "1997-01-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19092,
+      "answer": "sun",
+      "question": "In Slavic myth, Svarozic, the god of fire, is the brother of Dazhbog, god of this heavenly body",
+      "value": 200,
+      "airdate": "1997-01-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19098,
+      "answer": "wolf",
+      "question": "During the twilight of the gods, Odin is destined to be eaten by Fenris, one of these lupine animals",
+      "value": 300,
+      "airdate": "1997-01-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19104,
+      "answer": "Juno",
+      "question": "A July 7 festival honoring this supreme Roman goddess featured a sham fight by maidservants",
+      "value": 400,
+      "airdate": "1997-01-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19110,
+      "answer": "Furies",
+      "question": "Fearing their vengeful wrath, the Greeks called them Eumenides, which means \"The Kindly Ones\"",
+      "value": 500,
+      "airdate": "1997-01-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19627,
+      "answer": "wax",
+      "question": "Daedalus used this substance to fasten the wings to his back",
+      "value": 100,
+      "airdate": "1996-12-06T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19633,
+      "answer": "teeth",
+      "question": "Cadmus planted these parts of a dragon to raise some troops",
+      "value": 200,
+      "airdate": "1996-12-06T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19639,
+      "answer": "Electra",
+      "question": "The sister of Orestes, mourning became her",
+      "value": 300,
+      "airdate": "1996-12-06T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19645,
+      "answer": "Titans",
+      "question": "Zeus' father, Cronus, was one of this group of 12",
+      "value": 400,
+      "airdate": "1996-12-06T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19651,
+      "answer": "Castor",
+      "question": "Leda laid 2 eggs:  one with Helen & Pollux in it, the other containing Clytemnestra & him",
+      "value": 500,
+      "airdate": "1996-12-06T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19927,
+      "answer": "Midas",
+      "question": "For a while, everything he touched turned to gold, including his daughter",
+      "value": 100,
+      "airdate": "1996-11-21T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19933,
+      "answer": "the <i>Argo</i>",
+      "question": "Jason died in his old age when the prow of this ship fell on him",
+      "value": 200,
+      "airdate": "1996-11-21T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19939,
+      "answer": "the Fates",
+      "question": "These three goddesses who controlled human destiny were called \"Moirae\" in Greek & \"Parcae\" in Latin",
+      "value": 300,
+      "airdate": "1996-11-21T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19945,
+      "answer": "satyrs",
+      "question": "These attendants of Dionysus, part man & part animal, were famous for chasing nymphs",
+      "value": 400,
+      "airdate": "1996-11-21T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 19951,
+      "answer": "Charon",
+      "question": "For a fee of one obolus, he ferried the souls of the dead across the river Styx into Hades",
+      "value": 500,
+      "airdate": "1996-11-21T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 47257,
+      "answer": "Cupid",
+      "question": "The son of Venus, this Roman god of love carried a bow & arrows to shoot his victims",
+      "value": 100,
+      "airdate": "2000-10-05T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 47263,
+      "answer": "Zeus",
+      "question": "The son of Cronus & Rhea, he's the chief god of Greek mythology",
+      "value": 200,
+      "airdate": "2000-10-05T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 47269,
+      "answer": "Pandora",
+      "question": "When she opened the box that released all the misfortunes on the world, she shut it in time to keep hope inside",
+      "value": 300,
+      "airdate": "2000-10-05T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 47275,
+      "answer": "Mount Olympus",
+      "question": "This Greek mountain was the home of the gods",
+      "value": 400,
+      "airdate": "2000-10-05T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 47281,
+      "answer": "Medusa",
+      "question": "Athena gave this maiden snaky hair & a face so hideous that a glimpse of it would turn men to stone",
+      "value": 500,
+      "airdate": "2000-10-05T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 62225,
+      "answer": "Mars",
+      "question": "The Roman god of war",
+      "value": 200,
+      "airdate": "2003-10-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 62231,
+      "answer": "Odysseus",
+      "question": "This king of Ithaca was married to the faithful Penelope",
+      "value": 400,
+      "airdate": "2003-10-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 62237,
+      "answer": "Mercury",
+      "question": "(Sofia of the Clue Crew at the headquarters of Goodyear)  Goodyear's \"winged foot\" symbol was inspired by a statue of this god",
+      "value": 600,
+      "airdate": "2003-10-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 62243,
+      "answer": "Apollo",
+      "question": "When this Greek god came to Delphi, he killed a dragon named Python",
+      "value": 800,
+      "airdate": "2003-10-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 62249,
+      "answer": "Niobe",
+      "question": "After Zeus turned her to stone, she still wept over the loss of her children",
+      "value": 1000,
+      "airdate": "2003-10-16T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 65614,
+      "answer": "apples",
+      "question": "The fleet-footed Atalanta once lost a race to Hippomenes when she stopped to pick up these golden fruits",
+      "value": 200,
+      "airdate": "2005-03-04T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 65620,
+      "answer": "Minerva",
+      "question": "This Roman goddess of wisdom is said to have leaped forth from the brain of Jupiter, fully mature & in armor",
+      "value": 400,
+      "airdate": "2005-03-04T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 65626,
+      "answer": "Echo",
+      "question": "Hera punished this nymph by saying that she shall have the last word but no power to speak first",
+      "value": null,
+      "airdate": "2005-03-04T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 65632,
+      "answer": "trees",
+      "question": "Hamadryads were nymphs who lived in these; when they died, so did the hamadryads",
+      "value": 800,
+      "airdate": "2005-03-04T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 65638,
+      "answer": "the bull",
+      "question": "Heracles' seventh labor was to bring Eurystheus this savage Cretan animal",
+      "value": 1000,
+      "airdate": "2005-03-04T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 73204,
+      "answer": "a crocodile",
+      "question": "Part hippopotamus & part woman, the Egyptian goddess Taweret had the tail of this alligator relative",
+      "value": 200,
+      "airdate": "2006-02-07T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 73210,
+      "answer": "centaurs",
+      "question": "These half-horse, half-man creatures were notorious for misbehaving at parties",
+      "value": 400,
+      "airdate": "2006-02-07T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 73216,
+      "answer": "Achilles",
+      "question": "This \"heel\" of a hero fell in love with Penthesilea a little late; he'd already killed her!",
+      "value": 600,
+      "airdate": "2006-02-07T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 73222,
+      "answer": "Juno",
+      "question": "In Etruscan myth, Tinia & Uni are the counterparts of Jupiter & this lovely wife",
+      "value": 800,
+      "airdate": "2006-02-07T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 73228,
+      "answer": "Osiris",
+      "question": "Set, the evil brother of this Egyptian god, tricked him into lying down in a chest; it became his coffin",
+      "value": 1000,
+      "airdate": "2006-02-07T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 79324,
+      "answer": "death",
+      "question": "In Greek myth Hypnos was the god of sleep; his brother Thanatos was the god of this more permanent state",
+      "value": 200,
+      "airdate": "2007-03-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 79330,
+      "answer": "the Aztecs",
+      "question": "Not a bad gig: Omacatl was the god of joy, festvity & happiness in the pantheon of these people",
+      "value": 400,
+      "airdate": "2007-03-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 79336,
+      "answer": "Atlas",
+      "question": "In the title of an Ayn Rand novel, this mythological figure \"Shrugged\"",
+      "value": 600,
+      "airdate": "2007-03-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 79342,
+      "answer": "Odin",
+      "question": "Sleipnir was this Norse god's 8-legged stallion",
+      "value": 800,
+      "airdate": "2007-03-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 79348,
+      "answer": "Andromeda",
+      "question": "As a constellation, this mythological princess is chained to a rock as a sacrifice to a sea monster",
+      "value": 1000,
+      "airdate": "2007-03-14T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 84217,
+      "answer": "the llama",
+      "question": "In Incan myth, it was this South American camel relative that warned man about the impending flood",
+      "value": 200,
+      "airdate": "2008-06-13T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 84223,
+      "answer": "Helen",
+      "question": "Go to Ellen in the name books & you'll find it's a form of this name from Greek myth",
+      "value": 400,
+      "airdate": "2008-06-13T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 84229,
+      "answer": "Hercules",
+      "question": "In Roman myth, this powerful tot killed 2 serpents in his cradle",
+      "value": 600,
+      "airdate": "2008-06-13T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 84235,
+      "answer": "the cornucopia",
+      "question": "According to Greek mythology, this horn of plenty is the horn of the goat Amalthea",
+      "value": null,
+      "airdate": "2008-06-13T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 84241,
+      "answer": "Crete",
+      "question": "Island on which Theseus slew the Minotaur",
+      "value": 1000,
+      "airdate": "2008-06-13T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 107014,
+      "answer": "Atlas",
+      "question": "This brother of Prometheus had the whole world on his shoulders",
+      "value": 200,
+      "airdate": "2010-11-10T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 107020,
+      "answer": "a siren",
+      "question": "Sound the alarm!  It's the term for a nymph who lures sailors & ships onto the rocks",
+      "value": 400,
+      "airdate": "2010-11-10T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 107026,
+      "answer": "invisible",
+      "question": "The cyclopes gave headwear to Hades that rendered him not invincible, but this",
+      "value": 600,
+      "airdate": "2010-11-10T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 107032,
+      "answer": "Echo",
+      "question": "She pined away over Narcissus until only her voice was left",
+      "value": 800,
+      "airdate": "2010-11-10T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 107038,
+      "answer": "Bellerophon",
+      "question": "He tamed the winged horse Pegasus with a bridle given to him by Athena",
+      "value": 1000,
+      "airdate": "2010-11-10T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 119105,
+      "answer": "Jason",
+      "question": "This leader of the Argonauts was raised by the centaur Chiron",
+      "value": 200,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 119111,
+      "answer": "Achilles",
+      "question": "His mother Thetis made the mistake of bathing him in the River Styx by holding him by the heel, thus making his heel vulnerable",
+      "value": 400,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 119117,
+      "answer": "the Gordian knot",
+      "question": "The yoke of a chariot was lashed to a pole via this, named for the man who tied it so intricately",
+      "value": 600,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 119123,
+      "answer": "Hermes",
+      "question": "This Greek messenger was also the conductor of souls to the underworld",
+      "value": 800,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 119129,
+      "answer": "a Minotaur",
+      "question": "Asterius was the name of this hybrid creature kept in the labyrinth",
+      "value": 1000,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 122366,
+      "answer": "Hercules",
+      "question": "One of his labors was cleaning the stables of King Augeas",
+      "value": 200,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 122372,
+      "answer": "Poseidon",
+      "question": "This sea god was often depicted holding a trident",
+      "value": 400,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 122378,
+      "answer": "Athena",
+      "question": "This goddess of wisdom had an unusual parentage-- no mom, just sprang full grown out of Zeus' head",
+      "value": 600,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 122384,
+      "answer": "Daedalus",
+      "question": "He made wax wings so he & his son Icarus could escape Crete; a great plan in theory, but...",
+      "value": 800,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 122390,
+      "answer": "Iris",
+      "question": "She wasn't just the Greek goddess of the rainbow--she personified it, too",
+      "value": 1000,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": null
+    },
+    {
+      "id": 142672,
+      "answer": "Jason",
+      "question": "This leader of the Argonauts was raised by the centaur Chiron",
+      "value": 200,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4070,
+      "invalid_count": null
+    },
+    {
+      "id": 142678,
+      "answer": "Achilles",
+      "question": "His mother Thetis made the mistake of bathing him in the River Styx by holding him by the heel, thus making his heel vulnerable",
+      "value": 400,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4070,
+      "invalid_count": null
+    },
+    {
+      "id": 142684,
+      "answer": "the Gordian knot",
+      "question": "The yoke of a chariot was lashed to a pole via this, named for the man who tied it so intricately",
+      "value": 600,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4070,
+      "invalid_count": null
+    },
+    {
+      "id": 142690,
+      "answer": "Hermes",
+      "question": "This Greek messenger was also the conductor of souls to the underworld",
+      "value": 800,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4070,
+      "invalid_count": null
+    },
+    {
+      "id": 142696,
+      "answer": "a Minotaur",
+      "question": "Asterius was the name of this hybrid creature kept in the labyrinth",
+      "value": 1000,
+      "airdate": "2013-02-01T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4070,
+      "invalid_count": null
+    },
+    {
+      "id": 145735,
+      "answer": "Hercules",
+      "question": "One of his labors was cleaning the stables of King Augeas",
+      "value": 200,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4588,
+      "invalid_count": null
+    },
+    {
+      "id": 145741,
+      "answer": "Poseidon",
+      "question": "This sea god was often depicted holding a trident",
+      "value": 400,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4588,
+      "invalid_count": null
+    },
+    {
+      "id": 145747,
+      "answer": "Athena",
+      "question": "This goddess of wisdom had an unusual parentage-- no mom, just sprang full grown out of Zeus' head",
+      "value": 600,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4588,
+      "invalid_count": null
+    },
+    {
+      "id": 145753,
+      "answer": "Daedalus",
+      "question": "He made wax wings so he & his son Icarus could escape Crete; a great plan in theory, but...",
+      "value": 800,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4588,
+      "invalid_count": null
+    },
+    {
+      "id": 145759,
+      "answer": "Iris",
+      "question": "She wasn't just the Greek goddess of the rainbow--she personified it, too",
+      "value": 1000,
+      "airdate": "2014-07-30T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": 4588,
+      "invalid_count": null
+    },
+    {
+      "id": 13201,
+      "answer": "Irene Jacob",
+      "question": "",
+      "value": null,
+      "airdate": "1996-07-17T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": 6
+    },
+    {
+      "id": 4893,
+      "answer": "Mexico",
+      "question": "Xochipilli was the Nahua god of flowers & patron of dance, games & sports in what is now this country",
+      "value": 200,
+      "airdate": "1988-12-29T12:00:00.000Z",
+      "category_id": 680,
+      "game_id": null,
+      "invalid_count": 1
+    }
+  ]
+}
