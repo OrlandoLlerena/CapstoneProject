@@ -5,6 +5,8 @@ import "./gameboard.scss";
 const gameboard = () => {
   // gonna add the hookin in this section here
 
+  // const [player, setPlayer] = useState([])
+  // const [score, setScore] = useState([]);
   // const [category, setCategory] = useState([]);
   // const [clue, setClue] = useState([]);
 
