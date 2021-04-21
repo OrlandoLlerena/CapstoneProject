@@ -1,8 +1,55 @@
 @use "../../partials/partials" as *;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .boardcontainer {
-  background: linear-gradient(0.5turn, $Jdarkblue, $blue, $Jdarkblue);
+  background: linear-gradient(0.25turn, $Jdarkblue, $blue, $Jdarkblue);
   color: $Jgold;
   font-family: "Swiss";
   font-size: $h1size;
+}
+
+.category-box {
+  //   border: 3px solid silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category {
+  border: 5px solid $Jdarkblue;
+  background: $blue;
+  color: $white;
+  font-weight: normal;
+  text-shadow: 5px 2px 0px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  height: 9rem;
+  width: 20rem;
+}
+
+.boardbox {
+  display: flex;
+  color: $Jgold;
+  letter-spacing: 3px;
+}
+
+.money {
+  background: $blue;
+  color: $Jorange;
+  font-weight: normal;
+  font-size: 8rem;
+  text-shadow: 10px 5px 0px #000000;
+  border: 5px solid $Jdarkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  height: 9rem;
+  width: 20rem;
 }

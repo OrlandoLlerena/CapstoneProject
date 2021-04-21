@@ -77,6 +77,10 @@ This project is for educational purposes only.
 
 © "JEOPARDY!" is a registered trademark of Jeopardy Productions, Inc. License: All Rights Reserved.
 
+# API data provided by
+
+http://jservice.io/
+
 # Art and Music Credits
 
 Jeopardy Title clip art free clip art @ clker.com
