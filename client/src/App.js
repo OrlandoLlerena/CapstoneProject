@@ -1,7 +1,7 @@
 import React from "react";
 // import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Gameboard from "../src/components/gameboard/gameboard.jsx";
+import Gameboard from "./components/Gameboard/Gameboard.jsx";
 
 function App() {
   return (

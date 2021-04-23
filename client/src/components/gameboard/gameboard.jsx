@@ -1,27 +1,30 @@
 import React, { useState, useEffect } from "react";
-
 import "./gameboard.scss";
+import axios from "axios";
 
-const gameboard = () => {
+const Gameboard = () => {
   // gonna add the hookin in this section here
 
-  // const [player, setPlayer] = useState([])
-  // const [score, setScore] = useState([]);
-  // const [category, setCategory] = useState([]);
-  // const [clue, setClue] = useState([]);
+  const [player, setPlayer] = useState([]);
+  const [score, setScore] = useState([]);
+  const [category, setCategory] = useState([]);
+  const [clue, setClue] = useState([]);
+
+  // TODO: get the category to populate using static template first. read the information on bootstrap modal
 
   // Use effects and useState will go here
-  // useEffect(() => {
-  //   axios
-  //     .get(`add an api request here`)
-  //     .then((resp) => {
-  //       setCategory(resp.data.category);
-  //       setClue(resp.data.clue);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // });
+  useEffect(() => {
+    axios
+      .get("http://jservice.io/api/categories?count=5")
+      .then((resp) => {
+        console.log(resp.data);
+        // setCategory(resp.data.category);
+        // setClue(resp.data.clue);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <section className="boardcontainer">
@@ -113,4 +116,4 @@ const gameboard = () => {
   );
 };
 
-export default gameboard;
+export default Gameboard;
