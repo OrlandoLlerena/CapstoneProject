@@ -13,23 +13,46 @@ const Gameboard = () => {
   const [clue, setClue] = useState([]);
 
   // TODO: get the category to populate using static template first. read the information on bootstrap modal
+  const catAndQuestions = async () => {
+    const { data } = await axios.get(
+      "http://jservice.io/api/categories?count=5&offset=100"
+    );
+    setCategory(data);
+    const categoryIds = data.map((category) => category.id);
+    categoryIds.map((id) => {
+      // console.log(id);
+      return id;
+      // getClues(id);
+    });
+    return categoryIds;
+  };
 
-  // let capital = category.map((title) => title.toUpperCase());
-  // console.log(capital);
+  let clueArray = [];
+
+  async function getClues() {
+    const ids = await catAndQuestions();
+    // console.log(ids);
+    try {
+      ids.map(async (id) => {
+        const { data } = await axios.get(
+          `http://jservice.io/api/category?id=${id}`
+        );
+        // console.log(data.clues);
+        clueArray.push(data.clues);
+        // console.log(clueArray);
+        setClue(clueArray);
+        // console.log(clue[0][0].question ? clue[0][0].question : "wtf");
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  // console.log(clue[0][0].question ? clue[0][0].question : "wtf");
 
   // Use effects and useState will go here
   useEffect(() => {
-    axios
-      .get("http://jservice.io/api/categories?count=5&offset=100")
-      // .get("http://jservice.io/api/category?id={id}")
-      .then((resp) => {
-        setCategory(resp.data);
-        console.log(resp.data);
-        // setClue(resp.data.clue);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    catAndQuestions();
+    getClues();
   }, []);
 
   return (
@@ -48,17 +71,24 @@ const Gameboard = () => {
         <div className="category-box">
           <div className="boardbox">
             {category.map((cat, i) => {
+              let categoryClues = clue?.filter((singleClue) => {
+                // console.log(singleClue.category_id);
+                return cat.id === singleClue.category_id;
+              });
+              // console.log(categoryClues);
               return (
-                <h5 key={i} className="category">
-                  {cat.title}
-                </h5>
+                <div>
+                  <h5 key={i} className="category">
+                    {cat.title}
+                  </h5>
+                  {/* <h5 className="money">{clue[0][i].question}</h5> */}
+                  {/* <h5 className="money">Title</h5>
+                  <h5 className="money">Title</h5>
+                  <h5 className="money">Title</h5>
+                  <h5 className="money">Title</h5> */}
+                </div>
               );
             })}
-            {/* <h5 className="category">Title</h5>
-            <h5 className="category">Title</h5>
-            <h5 className="category">Title</h5>
-            <h5 className="category">Title</h5>
-            <h5 className="category">Title</h5> */}
           </div>
           <div className="boardbox">
             <h5 className="money">$100</h5>

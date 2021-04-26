@@ -9,11 +9,11 @@ function App() {
   return (
     <Router>
       <section id="container">
-        <Clue />
+        {/* <Clue /> */}
         <Switch>
-          {/* <Route exact path="/game" component={Gameboard} /> */}
+          <Route exact path="/game" component={Gameboard} />
           {/* <Route exact path="/login" components={Login} /> */}
-          {/* <Route exact path="/" component={Home} /> */}
+          <Route exact path="/" component={Home} />
         </Switch>
       </section>
     </Router>

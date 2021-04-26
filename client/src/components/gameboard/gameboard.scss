@@ -6,7 +6,7 @@
 }
 
 .boardcontainer {
-  border: 5px solid red;
+  // border: 5px solid red;
   background: linear-gradient(0.25turn, $Jdarkblue, $blue, $Jdarkblue);
   color: $Jgold;
   font-family: "Swiss";
@@ -16,7 +16,7 @@
 }
 
 .category-box {
-  border: 5px solid silver;
+  // border: 5px solid silver;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,7 +38,7 @@
 }
 
 .boardbox {
-  border: 5px solid orange;
+  // border: 5px solid orange;
   display: flex;
   justify-content: center;
   color: $Jgold;

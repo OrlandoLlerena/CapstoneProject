@@ -7,7 +7,8 @@ import Button from "react-bootstrap/Button";
 const Clue = () => {
   //  this area is reserved for hooks that
   const [show, setShow] = useState(false);
-
+  const handleClose = () => setShow(false);
+  //   const handleShow = () => setShow(true);
   // this is the area reserved for useEffects
 
   return (
@@ -33,22 +34,24 @@ const Clue = () => {
               "Like expectant women, pregnant cats can experience this A.M.
               ailment"
             </p>
+            <form>
+              {/* this is where some of the difficulty would be presented, multiple choice for easier mode, filled in for medium and hard mode */}
+              {/* easy mode will need its own data for multiple choice or will need to pull in random answers from api*/}
+              <input className="player-answer" type="text" />
+            </form>
           </Modal.Body>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Answer
+          </Button>
         </Modal>
       </div>
       <div className="modal-inner">
         <h2 className="clue-info">
           {/* the clue will be poplulated in this area */}
         </h2>
-
-        <form>
-          {/* this is where some of the difficulty would be presented, multiple choice for easier mode, filled in for medium and hard mode */}
-          {/* easy mode will need its own data for multiple choice or will need to pull in random answers from api*/}
-          <input className="player-answer" type="text" />
-          <button className="button" type="submit">
-            ANSWER
-          </button>
-        </form>
 
         <div className="results">
           <p className="results-correct">CORRECT</p>
