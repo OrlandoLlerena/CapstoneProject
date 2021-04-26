@@ -1,36 +1,73 @@
-// import React from "react";
+import React, { useState } from "react";
+import "./clue.scss";
 // import ReactDOM from "react-dom";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 
-// import "./styles.css";
+const Clue = () => {
+  //  this area is reserved for hooks that
+  const [show, setShow] = useState(false);
 
-// <div className="question-modal">
-//         <div className="modal-inner">
-//           <h2 className="clue-info">
-//             {/* the clue will be poplulated in this area */}
-//           </h2>
+  // this is the area reserved for useEffects
 
-//           <form>
-//             {/* this is where some of the difficulty would be presented, multiple choice for easier mode, filled in for medium and hard mode */}
-//             {/* easy mode will need its own data for multiple choice or will need to pull in random answers from api*/}
-//             <input className="player-answer" type="text" />
-//             <button className="button" type="submit">
-//               ANSWER
-//             </button>
-//           </form>
+  return (
+    <div className="question-modal">
+      <div>
+        <Button variant="primary" onClick={() => setShow(true)}>
+          Custom Width Modal
+        </Button>
 
-//           <div className="results">
-//             <p className="results-correct">CORRECT</p>
-//             <p className="results-wrong">INCORRECT</p>
-//             <p className="results-answer">
-//               The correct answer is{" "}
-//               <span className="results-answer-sytle">
-//                 {/* this is where the actual answer will be shown*/}
-//               </span>
-//             </p>
-//           </div>
-//         </div>
-//       </div>
+        <Modal
+          show={show}
+          onHide={() => setShow(false)}
+          dialogClassName="modal-90w"
+          aria-labelledby="example-custom-modal-styling-title"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="example-custom-modal-styling-title">
+              Custom Modal Styling
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>
+              "Like expectant women, pregnant cats can experience this A.M.
+              ailment"
+            </p>
+          </Modal.Body>
+        </Modal>
+      </div>
+      <div className="modal-inner">
+        <h2 className="clue-info">
+          {/* the clue will be poplulated in this area */}
+        </h2>
 
+        <form>
+          {/* this is where some of the difficulty would be presented, multiple choice for easier mode, filled in for medium and hard mode */}
+          {/* easy mode will need its own data for multiple choice or will need to pull in random answers from api*/}
+          <input className="player-answer" type="text" />
+          <button className="button" type="submit">
+            ANSWER
+          </button>
+        </form>
+
+        <div className="results">
+          <p className="results-correct">CORRECT</p>
+          <p className="results-wrong">INCORRECT</p>
+          <p className="results-answer">
+            The correct answer is{" "}
+            <span className="results-answer-sytle">
+              {/* this is where the actual answer will be shown*/}
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Clue;
+
+//  SEPARATE THIS INFORMATION
 // function Popup({ clue, onClick }) {
 //   return (
 //     <>
