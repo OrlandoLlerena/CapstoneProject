@@ -1,10 +1,52 @@
-.tbd {
-  //   background-image: url(../../assets/Images/jeopardy-game-clipart.hi.png);
-  background-image: url(../../assets/Images/jeopardy-logo-wtvd-img.jpg);
+@use "../../partials/partials.scss" as *;
+
+.home-background {
+  background-image: url(../../assets/Images/jeopardy-game-clipart.hi.png);
+  // background-image: url(../../assets/Images/jeopardy-logo-wtvd-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   height: auto;
   width: auto;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+}
+
+.guest {
+  background: linear-gradient(0.5turn, $Jdarkblue, $Jroyalblue, $Jdarkblue);
+  color: $Jgold;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 5rem;
+  width: 19rem;
+  border-radius: 50px;
+}
+
+.signup {
+  background: linear-gradient(0.5turn, $Jdarkblue, $Jroyalblue, $Jdarkblue);
+  color: $Jgold;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 5rem;
+  width: 19rem;
+  border-radius: 50px;
+}
+
+.login {
+  background: linear-gradient(0.5turn, #0e0039, #0000f2, #0e0039);
+  color: $Jgold;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 5rem;
+  width: 19rem;
+  border-radius: 50px;
 }

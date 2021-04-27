@@ -5,14 +5,13 @@ import "./gameboard.scss";
 import axios from "axios";
 
 const Gameboard = () => {
-  // gonna add the hookin in this section here
+  // gonna add the hooks in this section here
+  const [player, setPlayer] = useState(null);
+  const [score, setScore] = useState(null);
+  const [category, setCategory] = useState(null);
+  const [clue, setClue] = useState(null);
 
-  const [player, setPlayer] = useState([]);
-  const [score, setScore] = useState([]);
-  const [category, setCategory] = useState([]);
-  const [clue, setClue] = useState([]);
-
-  // TODO: get the category to populate using static template first. read the information on bootstrap modal
+  // populates the category
   const catAndQuestions = async () => {
     const { data } = await axios.get(
       "http://jservice.io/api/categories?count=5&offset=100"
@@ -24,36 +23,41 @@ const Gameboard = () => {
       return id;
       // getClues(id);
     });
-    return categoryIds;
+    // return categoryIds;
+    getClues(categoryIds);
   };
 
-  let clueArray = [];
-
-  async function getClues() {
-    const ids = await catAndQuestions();
+  async function getClues(ids) {
+    // const ids = await catAndQuestions();
     // console.log(ids);
+    let clueArray = [];
     try {
+      // let clueArray = [];
       ids.map(async (id) => {
         const { data } = await axios.get(
           `http://jservice.io/api/category?id=${id}`
         );
         // console.log(data.clues);
         clueArray.push(data.clues);
-        // console.log(clueArray);
-        setClue(clueArray);
-        // console.log(clue[0][0].question ? clue[0][0].question : "wtf");
+        // setClue(clueArray);
+        console.log(clueArray);
+        // console.log(clue[0][0].question);
       });
     } catch (error) {
       console.log(error);
     }
+    setClue(clueArray);
   }
-  // console.log(clue[0][0].question ? clue[0][0].question : "wtf");
+
+  // console.log(clue[0]?.[0]);
 
   // Use effects and useState will go here
   useEffect(() => {
     catAndQuestions();
-    getClues();
+    // getClues();
   }, []);
+
+  console.log(clue);
 
   return (
     <section className="boardcontainer">
@@ -70,22 +74,23 @@ const Gameboard = () => {
         {/* categories will go here, static to start them use api to randomize them */}
         <div className="category-box">
           <div className="boardbox">
-            {category.map((cat, i) => {
+            {category?.map((cat, i) => {
               let categoryClues = clue?.filter((singleClue) => {
                 // console.log(singleClue.category_id);
                 return cat.id === singleClue.category_id;
               });
-              // console.log(categoryClues);
+              console.log(categoryClues);
               return (
                 <div>
                   <h5 key={i} className="category">
                     {cat.title}
                   </h5>
-                  {/* <h5 className="money">{clue[0][i].question}</h5> */}
-                  {/* <h5 className="money">Title</h5>
-                  <h5 className="money">Title</h5>
-                  <h5 className="money">Title</h5>
-                  <h5 className="money">Title</h5> */}
+                  <h5 key={i} className="money">
+                    {clue?.[i]?.[0].question}
+                  </h5>
+                  <h5 key={i} className="money">
+                    {clue?.[i]?.[1].question}
+                  </h5>
                 </div>
               );
             })}
