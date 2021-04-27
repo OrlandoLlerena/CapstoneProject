@@ -57,7 +57,7 @@ const Gameboard = () => {
     // getClues();
   }, []);
 
-  console.log(clue);
+  // console.log(clue);
 
   return (
     <section className="boardcontainer">
@@ -84,10 +84,11 @@ const Gameboard = () => {
                 return cat.id === singleClue.category_id;
               });
               console.log(categoryClues);
+              let uppercaseCategory = cat.title.toUpperCase();
               return (
                 <div>
                   <h5 key={i} className="category">
-                    {cat.title}
+                    {uppercaseCategory}
                   </h5>
                   {/* <h5 key={i} className="money">
                     {clue?.[i]?.[0].question}
