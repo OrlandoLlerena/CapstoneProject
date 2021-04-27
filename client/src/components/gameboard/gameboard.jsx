@@ -63,11 +63,15 @@ const Gameboard = () => {
     <section className="boardcontainer">
       {/* got to decide if there will be a header with this info or will it appear as a podium somewhere below the board */}
       <div>
-        <h1>Player Name</h1>
+        <Link to="/" className="exit">
+          HOME
+        </Link>
+      </div>
+      <div className="header-container">
+        <h1 className="player">Player Name</h1>
         <p className="score">
-          Score <span className="score-counter"></span>
+          Score <span className="score-counter">00000</span>
         </p>
-        <Link to="/">Main Page</Link>
       </div>
 
       <section className="board">
@@ -85,12 +89,12 @@ const Gameboard = () => {
                   <h5 key={i} className="category">
                     {cat.title}
                   </h5>
-                  <h5 key={i} className="money">
+                  {/* <h5 key={i} className="money">
                     {clue?.[i]?.[0].question}
                   </h5>
                   <h5 key={i} className="money">
                     {clue?.[i]?.[1].question}
-                  </h5>
+                  </h5> */}
                 </div>
               );
             })}

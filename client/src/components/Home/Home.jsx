@@ -12,9 +12,7 @@ function Home() {
         <Link to="/game">
           <button className="guest">PLAY AS GUEST</button>
         </Link>
-
         <button className="signup">SIGN UP</button>
-
         <button className="login">LOGIN</button>
       </div>
     </section>
