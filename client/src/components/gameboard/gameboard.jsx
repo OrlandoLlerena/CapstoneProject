@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./gameboard.scss";
 import axios from "axios";
 import { shuffle } from "../../helper/helper";
+import ClueModal from "../../components/ClueModal/ClueModal";
 
 const Gameboard = () => {
   // gonna add the hooks in this section here
@@ -10,39 +11,31 @@ const Gameboard = () => {
   const [score, setScore] = useState(null);
   const [category, setCategory] = useState(null);
   const [clue, setClue] = useState(null);
+  const [current, setCurrent] = useState(null);
+  const [modalShow, setModalShow] = useState(false);
 
   // populates the category
   const catAndQuestions = async () => {
     const { data } = await axios.get(
       "http://jservice.io/api/categories?count=5&offset=100"
     );
-    // setCategory(data);
     const categoryIds = data.map((category) => category.id);
     categoryIds.map((id) => {
-      // console.log(id);
       return id;
-      // getClues(id);
     });
-    // return categoryIds;
     getClues(categoryIds);
   };
 
   async function getClues(ids) {
-    // const ids = await catAndQuestions();
     let categoryArray = [];
     let clueObj = {};
     try {
       const temp = ids.map(async (id) => {
-        // const { data } = await axios.get(
-        //   `http://jservice.io/api/category?id=${id}`
-        // );
-        // clueArray.push(data.clues);
         return new Promise((resolve, reject) => {
           axios.get(`http://jservice.io/api/category?id=${id}`).then((data) => {
             resolve(data);
           });
         });
-        // console.log(data.clues);
       });
       Promise.all(temp).then((result) => {
         result.forEach((result, categoryIndex) => {
@@ -58,6 +51,7 @@ const Gameboard = () => {
               newCategory.clue.push(modalId);
 
               clueObj[modalId] = {
+                id: modalId,
                 question: hint.question,
                 answer: hint.answer,
                 value: (index + 1) * 100,
@@ -74,6 +68,22 @@ const Gameboard = () => {
       console.log(error);
     }
   }
+
+  const handleClick = (question) => {
+    setCurrent(question);
+    setModalShow(true);
+    console.log(modalShow);
+  };
+
+  console.log(current);
+
+  // const handleModalOpen = () => {
+  //   setModalShow(true);
+  // };
+
+  const handleModalClose = () => {
+    setModalShow(false);
+  };
 
   // Use effects and useState will go here
   useEffect(() => {
@@ -100,7 +110,7 @@ const Gameboard = () => {
           <div className="boardbox">
             {category?.map((cat, i) => {
               let uppercaseCategory = cat.title.toUpperCase();
-              console.log(cat.clue);
+
               return (
                 <div>
                   <div>
@@ -108,11 +118,18 @@ const Gameboard = () => {
                       {uppercaseCategory}
                     </h5>
                   </div>
-                  {cat.clue.map((id) => {
+                  {cat.clue.map((id, i) => {
                     let question = clue?.[id];
                     return (
                       <div className="boardbox">
-                        <h5 className="money">${question?.value}</h5>
+                        <h5
+                          className="money"
+                          onClick={() => {
+                            handleClick(question);
+                          }}
+                        >
+                          ${question?.value}
+                        </h5>
                       </div>
                     );
                   })}
@@ -120,62 +137,14 @@ const Gameboard = () => {
               );
             })}
           </div>
-
-          {/* <div className="boardbox">
-            <h5 className="money">$100</h5>
-            <h5 className="money">$100</h5>
-            <h5 className="money">$100</h5>
-            <h5 className="money">$100</h5>
-            <h5 className="money">$100</h5>
-          </div>
-          <div className="boardbox">
-            <h5 className="money">$200</h5>
-            <h5 className="money">$200</h5>
-            <h5 className="money">$200</h5>
-            <h5 className="money">$200</h5>
-            <h5 className="money">$200</h5>
-          </div>
-          <div className="boardbox">
-            <h5 className="money">$300</h5>
-            <h5 className="money">$300</h5>
-            <h5 className="money">$300</h5>
-            <h5 className="money">$300</h5>
-            <h5 className="money">$300</h5>
-          </div>
-          <div className="boardbox">
-            <h5 className="money">$400</h5>
-            <h5 className="money">$400</h5>
-            <h5 className="money">$400</h5>
-            <h5 className="money">$400</h5>
-            <h5 className="money">$400</h5>
-          </div>
-          <div className="boardbox">
-            <h5 className="money">$500</h5>
-            <h5 className="money">$500</h5>
-            <h5 className="money">$500</h5>
-            <h5 className="money">$500</h5>
-            <h5 className="money">$500</h5>
-          </div> */}
         </div>
       </section>
-
-      {/* 
-      <section className="board-area">
-        <table className="table">
-          <th className="table-header">{category}</th>
-          <th className="table-header">{category}</th>
-          <th className="table-header">{category}</th>
-          <th className="table-header">{category}</th>
-          <th className="table-header">{category}</th>
-          <tr>
-            <td className="table-row">$200</td>
-            <td className="table-row">$400</td>
-            <td className="table-row">$600</td>
-            <td className="table-row">$800</td>
-            <td className="table-row">$1000</td>
-          </tr>
-        </table>
-      </section> */}
+      <ClueModal
+        onHide={handleModalClose}
+        show={modalShow}
+        close={handleModalClose}
+        current={current}
+      />
     </section>
   );
 };
