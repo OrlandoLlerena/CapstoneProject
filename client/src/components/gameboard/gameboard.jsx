@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 import "./gameboard.scss";
 import axios from "axios";
+import { shuffle } from "../../helper/helper";
 
 const Gameboard = () => {
   // gonna add the hooks in this section here
@@ -16,7 +16,7 @@ const Gameboard = () => {
     const { data } = await axios.get(
       "http://jservice.io/api/categories?count=5&offset=100"
     );
-    setCategory(data);
+    // setCategory(data);
     const categoryIds = data.map((category) => category.id);
     categoryIds.map((id) => {
       // console.log(id);
@@ -29,27 +29,51 @@ const Gameboard = () => {
 
   async function getClues(ids) {
     // const ids = await catAndQuestions();
-    // console.log(ids);
-    let clueArray = [];
+    let categoryArray = [];
+    let clueObj = {};
     try {
-      // let clueArray = [];
-      ids.map(async (id) => {
-        const { data } = await axios.get(
-          `http://jservice.io/api/category?id=${id}`
-        );
+      const temp = ids.map(async (id) => {
+        // const { data } = await axios.get(
+        //   `http://jservice.io/api/category?id=${id}`
+        // );
+        // clueArray.push(data.clues);
+        return new Promise((resolve, reject) => {
+          axios.get(`http://jservice.io/api/category?id=${id}`).then((data) => {
+            resolve(data);
+          });
+        });
         // console.log(data.clues);
-        clueArray.push(data.clues);
-        // setClue(clueArray);
-        console.log(clueArray);
-        // console.log(clue[0][0].question);
+      });
+      Promise.all(temp).then((result) => {
+        result.forEach((result, categoryIndex) => {
+          let newCategory = {
+            title: result.data.title,
+            clue: [],
+          };
+
+          let newClue = shuffle(result.data.clues)
+            .splice(0, 5)
+            .forEach((hint, index) => {
+              let modalId = categoryIndex + "-" + index;
+              newCategory.clue.push(modalId);
+
+              clueObj[modalId] = {
+                question: hint.question,
+                answer: hint.answer,
+                value: (index + 1) * 100,
+              };
+            });
+          categoryArray.push(newCategory);
+          // console.log(categoryArray);
+          // console.log(clueObj);
+        });
+        setCategory(categoryArray);
+        setClue(clueObj);
       });
     } catch (error) {
       console.log(error);
     }
-    setClue(clueArray);
   }
-
-  // console.log(clue[0]?.[0]);
 
   // Use effects and useState will go here
   useEffect(() => {
@@ -57,11 +81,8 @@ const Gameboard = () => {
     // getClues();
   }, []);
 
-  // console.log(clue);
-
   return (
     <section className="boardcontainer">
-      {/* got to decide if there will be a header with this info or will it appear as a podium somewhere below the board */}
       <div>
         <Link to="/" className="exit">
           HOME
@@ -75,32 +96,32 @@ const Gameboard = () => {
       </div>
 
       <section className="board">
-        {/* categories will go here, static to start them use api to randomize them */}
         <div className="category-box">
           <div className="boardbox">
             {category?.map((cat, i) => {
-              let categoryClues = clue?.filter((singleClue) => {
-                // console.log(singleClue.category_id);
-                return cat.id === singleClue.category_id;
-              });
-              console.log(categoryClues);
               let uppercaseCategory = cat.title.toUpperCase();
+              console.log(cat.clue);
               return (
                 <div>
-                  <h5 key={i} className="category">
-                    {uppercaseCategory}
-                  </h5>
-                  {/* <h5 key={i} className="money">
-                    {clue?.[i]?.[0].question}
-                  </h5>
-                  <h5 key={i} className="money">
-                    {clue?.[i]?.[1].question}
-                  </h5> */}
+                  <div>
+                    <h5 key={i} className="category">
+                      {uppercaseCategory}
+                    </h5>
+                  </div>
+                  {cat.clue.map((id) => {
+                    let question = clue?.[id];
+                    return (
+                      <div className="boardbox">
+                        <h5 className="money">${question?.value}</h5>
+                      </div>
+                    );
+                  })}
                 </div>
               );
             })}
           </div>
-          <div className="boardbox">
+
+          {/* <div className="boardbox">
             <h5 className="money">$100</h5>
             <h5 className="money">$100</h5>
             <h5 className="money">$100</h5>
@@ -134,9 +155,10 @@ const Gameboard = () => {
             <h5 className="money">$500</h5>
             <h5 className="money">$500</h5>
             <h5 className="money">$500</h5>
-          </div>
+          </div> */}
         </div>
       </section>
+
       {/* 
       <section className="board-area">
         <table className="table">
@@ -154,8 +176,6 @@ const Gameboard = () => {
           </tr>
         </table>
       </section> */}
-
-      {/* container for the card prompt, these should come up upon selection, will try to animate */}
     </section>
   );
 };
