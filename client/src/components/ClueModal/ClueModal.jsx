@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./ClueModal.scss";
 import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 
 const ClueModal = (props) => {
   const [userAnswer, setUserAnswer] = useState("");
@@ -24,7 +24,7 @@ const ClueModal = (props) => {
           className="screen"
           {...props}
           dialogClassName="modal-90w"
-          aria-labelledby="example-custom-modal-styling-title"
+          // aria-labelledby="example-custom-modal-styling-title"
         >
           {/* <Modal.Header closeButton>
             <Modal.Title id="example-custom-modal-styling-title">
@@ -43,29 +43,26 @@ const ClueModal = (props) => {
               />
             </form>
             <div className="modal-inner">
-              <div className="results">
+              {/* <div className="results">
                 <p className="results-correct">CORRECT</p>
+
                 <p className="results-wrong">INCORRECT</p>
                 <p className="results-answer">
                   The correct answer is:
                   <br />
                   <span className="results-answer-sytle">{answer}</span>
                 </p>
-              </div>
+              </div> */}
             </div>
           </Modal.Body>
 
-          {/* <Button variant="secondary" onClick={props.close}>
-        Close
-      </Button> */}
-          <Button
-            className="btn-primary"
-            // variant="flat"
+          <button
+            className="custom-submit"
             type="submit"
             onClick={() => props.handleSubmit(userAnswer)}
           >
             Answer
-          </Button>
+          </button>
         </Modal>
       </div>
     </div>

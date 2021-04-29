@@ -8,7 +8,7 @@ import ClueModal from "../../components/ClueModal/ClueModal";
 const Gameboard = () => {
   // setting the state using hooks below
   // const [player, setPlayer] = useState(null);
-  const [score, setScore] = useState(null);
+  const [score, setScore] = useState(0);
   const [category, setCategory] = useState(null);
   const [clue, setClue] = useState(null);
   const [current, setCurrent] = useState(null);
@@ -75,9 +75,6 @@ const Gameboard = () => {
   };
 
   const handleSubmit = (userAnswer) => {
-    console.log(userAnswer);
-    console.log(current.answer);
-    // -----------------------------------------------
     if (userAnswer === current.answer) {
       //handle logic if its true
       setScore(current.value + score);
@@ -85,14 +82,6 @@ const Gameboard = () => {
       //handle logic if its false
       setScore(score - current.value);
     }
-    // ----------------------------------------------------------
-
-    // console.log(event.target);
-    // event.preventDefault();
-    // setAnswer(event.target.value);
-    // console.log(current.answer);
-    // let correctAnswer = event.target.inputAnswer.value === current.answer;
-    // console.log(correctAnswer);
   };
 
   const handleModalClose = () => {
@@ -158,6 +147,7 @@ const Gameboard = () => {
         close={handleModalClose}
         current={current}
         handleSubmit={handleSubmit}
+        correct={answer}
       />
     </section>
   );
