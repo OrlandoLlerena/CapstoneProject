@@ -78,11 +78,13 @@ const Gameboard = () => {
     console.log(userAnswer);
     console.log(current.answer);
     // -----------------------------------------------
-    // if (userAnswer === current.answer) {
-    //   //handle logic if its true
-    // } else {
-    //   //handle logic if its false
-    // }
+    if (userAnswer === current.answer) {
+      //handle logic if its true
+      setScore(current.value + score);
+    } else {
+      //handle logic if its false
+      setScore(score - current.value);
+    }
     // ----------------------------------------------------------
 
     // console.log(event.target);
@@ -112,7 +114,7 @@ const Gameboard = () => {
       <div className="header-container">
         <h1 className="player">Player Name</h1>
         <p className="score">
-          Score <span className="score-counter">00000</span>
+          Score <span className="score-counter">{score}</span>
         </p>
       </div>
 
