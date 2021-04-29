@@ -17,25 +17,22 @@ const ClueModal = (props) => {
   let question = props.current?.question.toUpperCase();
   let answer = props.current?.answer.toUpperCase();
 
-  const validation = () => {
-    props.handleAnswer();
-    // props.close();
-  };
-
   return (
     <div className="question-modal">
       <div>
         <Modal
+          className="screen"
           {...props}
           dialogClassName="modal-90w"
           aria-labelledby="example-custom-modal-styling-title"
         >
-          <Modal.Header closeButton>
+          {/* <Modal.Header closeButton>
             <Modal.Title id="example-custom-modal-styling-title">
               Clue
             </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
+          </Modal.Header> */}
+
+          <Modal.Body className="modal-custom">
             <h1 className="clue-info">{question}</h1>
             <form onSubmit={props.handleSubmit} ref={inputRef}>
               <input
@@ -46,10 +43,6 @@ const ClueModal = (props) => {
               />
             </form>
             <div className="modal-inner">
-              <h2 className="clue-info">
-                {/* the clue will be poplulated in this area */}
-              </h2>
-
               <div className="results">
                 <p className="results-correct">CORRECT</p>
                 <p className="results-wrong">INCORRECT</p>
@@ -61,11 +54,13 @@ const ClueModal = (props) => {
               </div>
             </div>
           </Modal.Body>
+
           {/* <Button variant="secondary" onClick={props.close}>
         Close
       </Button> */}
           <Button
-            variant="primary"
+            className="btn-primary"
+            // variant="flat"
             type="submit"
             onClick={() => props.handleSubmit(userAnswer)}
           >
