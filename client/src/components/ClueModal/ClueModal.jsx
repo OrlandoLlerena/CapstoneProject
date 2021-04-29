@@ -1,64 +1,79 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./ClueModal.scss";
-
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
 const ClueModal = (props) => {
-  //  this area is reserved for hooks that
+  const [userAnswer, setUserAnswer] = useState("");
+  const inputRef = useRef(null);
+  // this area is reserved for hooks if needed:
   // const [show, setShow] = useState(false);
   // const handleClose = () => setShow(false);
-  //   const handleShow = () => setShow(true);
-  // this is the area reserved for useEffects
+  // const handleShow = () => setShow(true);
+
+  // this area is too be used for functions if needed
+
+  // this is the area reserved for useEffectsif needed
+  let question = props.current?.question.toUpperCase();
+  let answer = props.current?.answer.toUpperCase();
+
+  const validation = () => {
+    props.handleAnswer();
+    // props.close();
+  };
 
   return (
-    // <div className="question-modal">
-    //   <div>
-    <Modal
-      {...props}
-      // show={show}
-      // onHide={() => setShow(false)}
-      dialogClassName="modal-90w"
-      aria-labelledby="example-custom-modal-styling-title"
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="example-custom-modal-styling-title">
-          Custom Modal Styling
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <p>{props.current?.question}</p>
-        <form>
-          {/* this is where some of the difficulty would be presented, multiple choice for easier mode, filled in for medium and hard mode */}
-          {/* easy mode will need its own data for multiple choice or will need to pull in random answers from api*/}
-          <input className="player-answer" type="text" />
-        </form>
-        <div className="modal-inner">
-          <h2 className="clue-info">
-            {/* the clue will be poplulated in this area */}
-          </h2>
+    <div className="question-modal">
+      <div>
+        <Modal
+          {...props}
+          dialogClassName="modal-90w"
+          aria-labelledby="example-custom-modal-styling-title"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="example-custom-modal-styling-title">
+              Clue
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h1 className="clue-info">{question}</h1>
+            <form onSubmit={props.handleSubmit} ref={inputRef}>
+              <input
+                className="player-answer"
+                type="text"
+                name="inputAnswer"
+                onChange={(e) => setUserAnswer(e.target.value)}
+              />
+            </form>
+            <div className="modal-inner">
+              <h2 className="clue-info">
+                {/* the clue will be poplulated in this area */}
+              </h2>
 
-          <div className="results">
-            <p className="results-correct">CORRECT</p>
-            <p className="results-wrong">INCORRECT</p>
-            <p className="results-answer">
-              The correct answer is{" "}
-              <span className="results-answer-sytle">
-                {/* this is where the actual answer will be shown*/}
-              </span>
-            </p>
-          </div>
-        </div>
-      </Modal.Body>
-      <Button variant="secondary" onClick={props.close}>
+              <div className="results">
+                <p className="results-correct">CORRECT</p>
+                <p className="results-wrong">INCORRECT</p>
+                <p className="results-answer">
+                  The correct answer is:
+                  <br />
+                  <span className="results-answer-sytle">{answer}</span>
+                </p>
+              </div>
+            </div>
+          </Modal.Body>
+          {/* <Button variant="secondary" onClick={props.close}>
         Close
-      </Button>
-      <Button variant="primary" onClick={props.close}>
-        Answer
-      </Button>
-    </Modal>
-    //   </div>
-    // </div>
+      </Button> */}
+          <Button
+            variant="primary"
+            type="submit"
+            onClick={() => props.handleSubmit(userAnswer)}
+          >
+            Answer
+          </Button>
+        </Modal>
+      </div>
+    </div>
   );
 };
 

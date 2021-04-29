@@ -22,6 +22,7 @@
 }
 
 .guest {
+  // border: 2px solid $Jgold;
   background: linear-gradient(0.5turn, $Jdarkblue, $Jroyalblue, $Jdarkblue);
   color: $Jgold;
   margin: 4px 0px;
@@ -30,9 +31,15 @@
   height: 5rem;
   width: 19rem;
   border-radius: 50px;
+}
+
+.guest:hover {
+  background: linear-gradient(0.5turn, $Jorange, $Jgold, $Jorange);
+  color: $Jroyalblue;
 }
 
 .signup {
+  // border: 2px solid $Jgold;
   background: linear-gradient(0.5turn, $Jdarkblue, $Jroyalblue, $Jdarkblue);
   color: $Jgold;
   margin: 4px 0px;
@@ -43,7 +50,13 @@
   border-radius: 50px;
 }
 
+.signup:hover {
+  background: linear-gradient(0.5turn, $Jorange, $Jgold, $Jorange);
+  color: $Jroyalblue;
+}
+
 .login {
+  // border: 2px solid $Jgold;
   background: linear-gradient(0.5turn, #0e0039, #0000f2, #0e0039);
   color: $Jgold;
   margin: 4px 0px;
@@ -52,4 +65,9 @@
   height: 5rem;
   width: 19rem;
   border-radius: 50px;
+}
+
+.login:hover {
+  background: linear-gradient(0.5turn, $Jorange, $Jgold, $Jorange);
+  color: $Jroyalblue;
 }

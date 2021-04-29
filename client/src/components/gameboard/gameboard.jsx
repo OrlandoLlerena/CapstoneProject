@@ -6,13 +6,14 @@ import { shuffle } from "../../helper/helper";
 import ClueModal from "../../components/ClueModal/ClueModal";
 
 const Gameboard = () => {
-  // gonna add the hooks in this section here
-  const [player, setPlayer] = useState(null);
+  // setting the state using hooks below
+  // const [player, setPlayer] = useState(null);
   const [score, setScore] = useState(null);
   const [category, setCategory] = useState(null);
   const [clue, setClue] = useState(null);
   const [current, setCurrent] = useState(null);
   const [modalShow, setModalShow] = useState(false);
+  const [answer, setAnswer] = useState(" ");
 
   // populates the category
   const catAndQuestions = async () => {
@@ -26,6 +27,7 @@ const Gameboard = () => {
     getClues(categoryIds);
   };
 
+  // populates the questions
   async function getClues(ids) {
     let categoryArray = [];
     let clueObj = {};
@@ -58,8 +60,6 @@ const Gameboard = () => {
               };
             });
           categoryArray.push(newCategory);
-          // console.log(categoryArray);
-          // console.log(clueObj);
         });
         setCategory(categoryArray);
         setClue(clueObj);
@@ -72,14 +72,26 @@ const Gameboard = () => {
   const handleClick = (question) => {
     setCurrent(question);
     setModalShow(true);
-    console.log(modalShow);
   };
 
-  console.log(current);
+  const handleSubmit = (userAnswer) => {
+    console.log(userAnswer);
+    console.log(current.answer);
+    // -----------------------------------------------
+    // if (userAnswer === current.answer) {
+    //   //handle logic if its true
+    // } else {
+    //   //handle logic if its false
+    // }
+    // ----------------------------------------------------------
 
-  // const handleModalOpen = () => {
-  //   setModalShow(true);
-  // };
+    // console.log(event.target);
+    // event.preventDefault();
+    // setAnswer(event.target.value);
+    // console.log(current.answer);
+    // let correctAnswer = event.target.inputAnswer.value === current.answer;
+    // console.log(correctAnswer);
+  };
 
   const handleModalClose = () => {
     setModalShow(false);
@@ -88,7 +100,6 @@ const Gameboard = () => {
   // Use effects and useState will go here
   useEffect(() => {
     catAndQuestions();
-    // getClues();
   }, []);
 
   return (
@@ -110,7 +121,6 @@ const Gameboard = () => {
           <div className="boardbox">
             {category?.map((cat, i) => {
               let uppercaseCategory = cat.title.toUpperCase();
-
               return (
                 <div>
                   <div>
@@ -123,6 +133,7 @@ const Gameboard = () => {
                     return (
                       <div className="boardbox">
                         <h5
+                          key={i}
                           className="money"
                           onClick={() => {
                             handleClick(question);
@@ -144,6 +155,7 @@ const Gameboard = () => {
         show={modalShow}
         close={handleModalClose}
         current={current}
+        handleSubmit={handleSubmit}
       />
     </section>
   );

@@ -1,0 +1,11 @@
+@use "../../partials/partials" as *;
+
+.clue-info {
+  font-family: "Korinna";
+  text-align: center;
+}
+
+.player-answer {
+  display: flex;
+  justify-self: center;
+}
