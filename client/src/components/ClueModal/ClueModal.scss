@@ -3,12 +3,16 @@
 .clue-info {
   font-family: "Korinna";
   text-align: center;
-  text-shadow: 5px 5px 0px #000000;
+  text-shadow: 4px 4px 0px #000000;
 }
 
 .player-answer {
   display: flex;
   justify-self: center;
+  width: 25rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  margin: 10px 0px;
 }
 
 .custom-submit {
@@ -29,22 +33,45 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  border: none;
 }
 
 .none {
   display: none;
 }
 
+.results {
+  text-shadow: 4px 4px 0px #000000;
+  font-size: 2rem;
+  font-family: "Korinna";
+}
+
 .result-correct {
   display: initial;
+  display: flex;
+  text-shadow: 4px 4px 0px #000000;
+  font-size: 2rem;
+  color: #70e000;
 }
 
 .result-wrong {
-  display: initial;
+  display: flex;
+  justify-content: center;
+  text-shadow: 4px 4px 0px #000000;
+  font-size: 2rem;
+  color: #e5383b;
+}
+
+.results-answer-sytle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .screen {
   background-color: $Jroyalblue;
+  border: none;
+}
+
+body {
   border: none;
 }

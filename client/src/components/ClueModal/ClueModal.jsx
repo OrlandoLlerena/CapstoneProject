@@ -42,6 +42,7 @@ const ClueModal = (props) => {
                 onChange={(e) => setUserAnswer(e.target.value)}
               />
             </form>
+
             <div className="modal-inner">
               <div className="results">
                 <div
@@ -49,14 +50,14 @@ const ClueModal = (props) => {
                     props.correct === true ? "results-correct" : "none"
                   }
                 >
-                  <p>CORRECT</p>
+                  <p className="result-correct">CORRECT</p>
                   <span className="results-answer-sytle">{answer}</span>
                 </div>
 
                 <div
                   className={props.correct === false ? "results-wrong" : "none"}
                 >
-                  <p>INCORRECT</p>
+                  <p className="result-wrong">INCORRECT</p>
                   <p className="results-answer">
                     The correct answer is:
                     <br />
