@@ -13,12 +13,12 @@ const Gameboard = () => {
   const [clue, setClue] = useState(null);
   const [current, setCurrent] = useState(null);
   const [modalShow, setModalShow] = useState(false);
-  const [answer, setAnswer] = useState(" ");
+  const [correct, setCorrect] = useState(null);
 
   // populates the category
   const catAndQuestions = async () => {
     const { data } = await axios.get(
-      "http://jservice.io/api/categories?count=5&offset=100"
+      "http://jservice.io/api/categories?count=5&offset=305"
     );
     const categoryIds = data.map((category) => category.id);
     categoryIds.map((id) => {
@@ -72,15 +72,18 @@ const Gameboard = () => {
   const handleClick = (question) => {
     setCurrent(question);
     setModalShow(true);
+    setCorrect(null);
   };
 
   const handleSubmit = (userAnswer) => {
     if (userAnswer === current.answer) {
       //handle logic if its true
       setScore(current.value + score);
+      setCorrect(true);
     } else {
       //handle logic if its false
       setScore(score - current.value);
+      setCorrect(false);
     }
   };
 
@@ -147,7 +150,7 @@ const Gameboard = () => {
         close={handleModalClose}
         current={current}
         handleSubmit={handleSubmit}
-        correct={answer}
+        correct={correct}
       />
     </section>
   );

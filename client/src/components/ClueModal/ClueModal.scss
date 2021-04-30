@@ -3,6 +3,7 @@
 .clue-info {
   font-family: "Korinna";
   text-align: center;
+  text-shadow: 5px 5px 0px #000000;
 }
 
 .player-answer {
@@ -29,6 +30,18 @@
   justify-content: center;
   align-content: center;
   border: none;
+}
+
+.none {
+  display: none;
+}
+
+.result-correct {
+  display: initial;
+}
+
+.result-wrong {
+  display: initial;
 }
 
 .screen {

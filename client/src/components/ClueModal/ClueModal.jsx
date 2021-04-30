@@ -43,16 +43,27 @@ const ClueModal = (props) => {
               />
             </form>
             <div className="modal-inner">
-              {/* <div className="results">
-                <p className="results-correct">CORRECT</p>
-
-                <p className="results-wrong">INCORRECT</p>
-                <p className="results-answer">
-                  The correct answer is:
-                  <br />
+              <div className="results">
+                <div
+                  className={
+                    props.correct === true ? "results-correct" : "none"
+                  }
+                >
+                  <p>CORRECT</p>
                   <span className="results-answer-sytle">{answer}</span>
-                </p>
-              </div> */}
+                </div>
+
+                <div
+                  className={props.correct === false ? "results-wrong" : "none"}
+                >
+                  <p>INCORRECT</p>
+                  <p className="results-answer">
+                    The correct answer is:
+                    <br />
+                    <span className="results-answer-sytle">{answer}</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </Modal.Body>
 
