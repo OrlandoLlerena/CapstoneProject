@@ -14,6 +14,7 @@ const Gameboard = () => {
   const [current, setCurrent] = useState(null);
   const [modalShow, setModalShow] = useState(false);
   const [correct, setCorrect] = useState(null);
+  const [used, setUsed] = useState(false);
 
   // populates the category
   const catAndQuestions = async () => {
@@ -70,9 +71,11 @@ const Gameboard = () => {
   }
 
   const handleClick = (question) => {
+    console.log(question);
     setCurrent(question);
     setModalShow(true);
     setCorrect(null);
+    setUsed(true);
   };
 
   const handleSubmit = (userAnswer) => {
@@ -104,7 +107,7 @@ const Gameboard = () => {
         </Link>
       </div>
       <div className="header-container">
-        <h1 className="player">Player Name</h1>
+        <h1 className="player">Guest Player</h1>
         <p className="score">
           Score <span className="score-counter">{score}</span>
         </p>
@@ -129,6 +132,7 @@ const Gameboard = () => {
                         <h5
                           key={i}
                           className="money"
+                          // className={used === true ? "used" : "money"}
                           onClick={() => {
                             handleClick(question);
                           }}

@@ -24,6 +24,9 @@ const ClueModal = (props) => {
           className="screen"
           {...props}
           dialogClassName="modal-90w"
+          centered
+          size="lg"
+          // bsPrefix="modal"
           // aria-labelledby="example-custom-modal-styling-title"
         >
           {/* <Modal.Header closeButton>
