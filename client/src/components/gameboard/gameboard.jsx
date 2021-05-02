@@ -14,7 +14,6 @@ const Gameboard = () => {
   const [current, setCurrent] = useState(null);
   const [modalShow, setModalShow] = useState(false);
   const [correct, setCorrect] = useState(null);
-  const [used, setUsed] = useState(false);
 
   // populates the category
   const catAndQuestions = async () => {
@@ -46,18 +45,17 @@ const Gameboard = () => {
             title: result.data.title,
             clue: [],
           };
-
           let newClue = shuffle(result.data.clues)
             .splice(0, 5)
             .forEach((hint, index) => {
               let modalId = categoryIndex + "-" + index;
               newCategory.clue.push(modalId);
-
               clueObj[modalId] = {
                 id: modalId,
                 question: hint.question,
                 answer: hint.answer,
                 value: (index + 1) * 100,
+                used: false,
               };
             });
           categoryArray.push(newCategory);
@@ -75,7 +73,7 @@ const Gameboard = () => {
     setCurrent(question);
     setModalShow(true);
     setCorrect(null);
-    setUsed(true);
+    question.used = true;
   };
 
   const handleSubmit = (userAnswer) => {
@@ -120,7 +118,7 @@ const Gameboard = () => {
               let uppercaseCategory = cat.title.toUpperCase();
               return (
                 <div>
-                  <div>
+                  <div className="boardboxTest">
                     <h5 key={i} className="category">
                       {uppercaseCategory}
                     </h5>
@@ -128,11 +126,11 @@ const Gameboard = () => {
                   {cat.clue.map((id, i) => {
                     let question = clue?.[id];
                     return (
-                      <div className="boardbox">
+                      <div className="boardboxTest">
                         <h5
                           key={i}
-                          className="money"
-                          // className={used === true ? "used" : "money"}
+                          // className="money"
+                          className={question?.used ? "used" : "money"}
                           onClick={() => {
                             handleClick(question);
                           }}
