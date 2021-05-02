@@ -40,22 +40,36 @@ function Home() {
         <Link to="/game">
           <button className="guest">PLAY AS GUEST</button>
         </Link>
-        <button className="signup">SIGN UP</button>
+        <button
+          className="signup"
+          onClick={() => {
+            handleSinupModalOpen();
+          }}
+        >
+          SIGN UP
+        </button>
 
-        <button className="login">LOGIN</button>
+        <button
+          className="login"
+          onClick={() => {
+            handleLoginModalOpen();
+          }}
+        >
+          LOGIN
+        </button>
       </div>
       <SignupModal
-        onHide={handleModalClose}
+        onHide={handleSignupModalClose}
         show={showSignup}
-        close={handleModalClose}
-        handleSubmit={handleSubmit}
+        close={handleSignupModalClose}
+        signupChange={handleSignupChange}
       />
 
       <LoginModal
-        onHide={handleModalClose}
-        show={modalShow}
-        close={handleModalClose}
-        handleSubmit={handleSubmit}
+        onHide={handleLoginModalClose}
+        show={showLogin}
+        close={handleLoginModalClose}
+        loginChange={handleLoginModalChange}
       />
     </section>
   );

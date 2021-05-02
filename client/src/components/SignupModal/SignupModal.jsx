@@ -7,10 +7,6 @@ const SignupModal = (props) => {
   return (
     <section className="signup-modal">
       <div>
-        <Button variant="primary" onClick={() => setShow(true)}>
-          Custom Width Modal
-        </Button>
-
         <Modal
           {...props}
           dialogClassName="modal-90w"
