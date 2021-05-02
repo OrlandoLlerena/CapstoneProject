@@ -9,18 +9,30 @@ const LoginModal = (props) => {
       <div>
         <Modal
           {...props}
+          backdrop="static"
           dialogClassName="modal-90w"
           aria-labelledby="example-custom-modal-styling-title"
           centered
         >
           <Modal.Header closeButton>
             <Modal.Title id="example-custom-modal-styling-title">
-              Custom Modal Styling
+              Member Login screen
             </Modal.Title>
           </Modal.Header>
 
           <Modal.Body>
-            <p>this shit is for real</p>
+            <div>
+              <form>
+                <h4>Email</h4>
+                <input type="text" placeholder="Enter Email" />
+                <h4>Password</h4>
+                <input type="text" placeholder="Enter Password" />
+              </form>
+              <p>this is great for working</p>
+            </div>
+            <p>
+              If you are not a member please <a>Sign Up Now!</a>
+            </p>
           </Modal.Body>
         </Modal>
       </div>
