@@ -1,0 +1,37 @@
+@use "../../partials/partials" as *;
+
+.custom {
+  background: linear-gradient(0.25turn, $Jorange, $Jgold, $Jorange);
+  //   background: white;
+  color: $Jroyalblue;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0px;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-around;
+  margin: 1px;
+  width: 15rem;
+}
+
+.close-btn {
+  background: linear-gradient(0.5turn, $Jorange, $Jgold, $Jorange);
+  color: $Jroyalblue;
+  font-weight: 700;
+  width: 6rem;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.submit-btn {
+  background: linear-gradient(0.5turn, $Jdarkblue, $Jroyalblue, $Jdarkblue);
+  color: white;
+  width: 6rem;
+  border-radius: 10px;
+  border: 2px solid $white;
+}

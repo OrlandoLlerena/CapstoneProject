@@ -10,16 +10,13 @@ const SignupModal = (props) => {
           {...props}
           backdrop="static"
           dialogClassName="modal-90w"
-          aria-labelledby="example-custom-modal-styling-title"
+          className="custom-modal"
           centered
         >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-custom-modal-styling-title">
-              SIGN UP
-            </Modal.Title>
+          <Modal.Header className="custom" closeButton>
+            <Modal.Title id="modal-title">SIGN UP</Modal.Title>
           </Modal.Header>
-
-          <Modal.Body>
+          <Modal.Body className="custom">
             <div>
               <form>
                 <p>
@@ -27,22 +24,43 @@ const SignupModal = (props) => {
                   below in order to proceed.
                 </p>
                 <h4>First Name</h4>
-                <input type="text" placeholder="First Name" />
+                <input
+                  className="custom-field"
+                  type="text"
+                  placeholder="First Name"
+                />
                 <h4>Last Name</h4>
-                <input type="text" placeholder="Last Name" />
+                <input
+                  className="custom-field"
+                  type="text"
+                  placeholder="Last Name"
+                />
                 <h4>Email</h4>
-                <input type="text" placeholder="Email" />
+                <input
+                  className="custom-field"
+                  type="text"
+                  placeholder="Email"
+                />
                 <h4>Password</h4>
-                <input type="text" placeholder="Email" />
+                <input
+                  className="custom-field"
+                  type="text"
+                  placeholder="Password"
+                />
                 <h4>Confirm Password</h4>
-                <input type="text" placeholder="Email" />
-                <h4>Topic a</h4>
-                <input type="text" placeholder="Topic a" />
-                <h4>Topic b</h4>
-                <input type="text" placeholder="Topic b" />
-                <h4>Topic c</h4>
-                <input type="text" placeholder="Topic c" />
+                <input
+                  className="custom-field"
+                  type="text"
+                  placeholder="Confirm Password"
+                />
               </form>
+
+              <div className="btn-container">
+                <div className="btn-box">
+                  <button className="close-btn">Close</button>
+                  <button className="submit-btn">Submit</button>
+                </div>
+              </div>
             </div>
             <p> IF YOU'RE ALREADY A MEMBER PLEASE LOGIN IN HERE.</p>
           </Modal.Body>

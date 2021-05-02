@@ -129,7 +129,6 @@ const Gameboard = () => {
                       <div className="boardboxTest">
                         <h5
                           key={i}
-                          // className="money"
                           className={question?.used ? "used" : "money"}
                           onClick={() => {
                             handleClick(question);

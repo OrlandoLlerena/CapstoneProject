@@ -10,16 +10,13 @@ const LoginModal = (props) => {
           {...props}
           backdrop="static"
           dialogClassName="modal-90w"
-          aria-labelledby="example-custom-modal-styling-title"
           centered
         >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-custom-modal-styling-title">
-              Member Login screen
-            </Modal.Title>
+          <Modal.Header className="custom" closeButton>
+            <Modal.Title id="custom-modal">Member Login screen</Modal.Title>
           </Modal.Header>
 
-          <Modal.Body>
+          <Modal.Body className="custom">
             <div>
               <p>Welcome back member please login below:</p>
               <form>
@@ -28,6 +25,12 @@ const LoginModal = (props) => {
                 <h4>Password</h4>
                 <input type="text" placeholder="Enter Password" />
               </form>
+            </div>
+            <div className="btn-container">
+              <div className="btn-box">
+                <button className="close-btn">Close</button>
+                <button className="submit-btn">Submit</button>
+              </div>
             </div>
             <p>
               If you are not a member please <a>Sign Up Now!</a>

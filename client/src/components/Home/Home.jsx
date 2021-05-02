@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import SignupModal from "../SignupModal/SignupModal";
 import LoginModal from "../LoginModal/LoginModal";
 
-// import Title from "../../assets/Images/jeopardy-logo-wtvd-img.jpg";
-
 function Home() {
   const [showSignup, setSignupShow] = useState(false);
   const [showLogin, setLoginShow] = useState(false);
@@ -40,6 +38,7 @@ function Home() {
         <Link to="/game">
           <button className="guest">PLAY AS GUEST</button>
         </Link>
+
         <button
           className="signup"
           onClick={() => {
@@ -58,6 +57,7 @@ function Home() {
           LOGIN
         </button>
       </div>
+
       <SignupModal
         onHide={handleSignupModalClose}
         show={showSignup}
