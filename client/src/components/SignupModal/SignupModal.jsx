@@ -3,9 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import "./SignupModal.scss";
 import Button from "react-bootstrap/Button";
 
-const SignupModal = () => {
-  const [show, setShow] = useState(false);
-
+const SignupModal = (props) => {
   return (
     <section className="signup-modal">
       <div>
@@ -14,26 +12,19 @@ const SignupModal = () => {
         </Button>
 
         <Modal
-          show={show}
-          onHide={() => setShow(false)}
+          {...props}
           dialogClassName="modal-90w"
           aria-labelledby="example-custom-modal-styling-title"
+          centered
         >
           <Modal.Header closeButton>
             <Modal.Title id="example-custom-modal-styling-title">
               Custom Modal Styling
             </Modal.Title>
           </Modal.Header>
+
           <Modal.Body>
-            <p>
-              Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae
-              unde commodi aspernatur enim, consectetur. Cumque deleniti
-              temporibus ipsam atque a dolores quisquam quisquam adipisci
-              possimus laboriosam. Quibusdam facilis doloribus debitis! Sit
-              quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem!
-              Mollitia reiciendis porro quo magni incidunt dolore amet atque
-              facilis ipsum deleniti rem!
-            </p>
+            <p>this shit is for real</p>
           </Modal.Body>
         </Modal>
       </div>
