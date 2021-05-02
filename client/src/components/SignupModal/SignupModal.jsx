@@ -1,7 +1,6 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import "./SignupModal.scss";
-import Button from "react-bootstrap/Button";
 
 const SignupModal = (props) => {
   return (

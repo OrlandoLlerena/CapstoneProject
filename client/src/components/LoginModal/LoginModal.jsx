@@ -1,7 +1,6 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import "./LoginModal.scss";
-import Button from "react-bootstrap/Button";
 
 const LoginModal = (props) => {
   return (
@@ -22,13 +21,13 @@ const LoginModal = (props) => {
 
           <Modal.Body>
             <div>
+              <p>Welcome back member please login below:</p>
               <form>
                 <h4>Email</h4>
                 <input type="text" placeholder="Enter Email" />
                 <h4>Password</h4>
                 <input type="text" placeholder="Enter Password" />
               </form>
-              <p>this is great for working</p>
             </div>
             <p>
               If you are not a member please <a>Sign Up Now!</a>
