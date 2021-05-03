@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import "./SignupModal.scss";
+import { Link } from "react-router-dom";
 
 const SignupModal = (props) => {
   return (
@@ -62,7 +63,13 @@ const SignupModal = (props) => {
                 </div>
               </div>
             </div>
-            <p> IF YOU'RE ALREADY A MEMBER PLEASE LOGIN IN HERE.</p>
+            <p>
+              {" "}
+              IF YOU'RE ALREADY A MEMBER PLEASE{" "}
+              <Link className="link" to="" onClick={props.signupChange}>
+                LOGIN HERE.
+              </Link>
+            </p>
           </Modal.Body>
         </Modal>
       </div>

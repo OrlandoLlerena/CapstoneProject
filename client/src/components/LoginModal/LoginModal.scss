@@ -2,8 +2,12 @@
 
 .custom {
   background: linear-gradient(0.25turn, $Jorange, $Jgold, $Jorange);
-  //   background: white;
   color: $Jroyalblue;
+}
+
+.custom-field {
+  border-radius: 8px;
+  width: 15rem;
 }
 
 .btn-container {
@@ -34,4 +38,13 @@
   width: 6rem;
   border-radius: 10px;
   border: 2px solid $white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  &:hover {
+    font-size: 20px;
+  }
 }

@@ -39,3 +39,12 @@
   border-radius: 10px;
   border: 2px solid $white;
 }
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  &:hover {
+    font-size: 20px;
+  }
+}

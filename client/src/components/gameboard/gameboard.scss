@@ -6,7 +6,6 @@
 }
 
 .boardcontainer {
-  // border: 5px solid red;
   background: linear-gradient(0.25turn, $Jdarkblue, $blue, $Jdarkblue);
   color: $Jgold;
   font-family: "Swiss";
@@ -27,8 +26,7 @@
   font-size: 5rem;
   font-weight: 600;
   letter-spacing: 2px;
-  margin: 0px;
-  // text-shadow: 5px 2px 0px #000000;
+  margin: 9px;
 }
 
 .score {
