@@ -21,7 +21,7 @@ const Gameboard = () => {
 
   const catAndQuestions = async () => {
     const { data } = await axios.get(
-      `http://jservice.io/api/categories?count=5&offset=${offset}`
+      `https://jservice.io/api/categories?count=5&offset=${offset}`
     );
     const categoryIds = data.map((category) => category.id);
     categoryIds.map((id) => {
@@ -37,9 +37,11 @@ const Gameboard = () => {
     try {
       const temp = ids.map(async (id) => {
         return new Promise((resolve, reject) => {
-          axios.get(`http://jservice.io/api/category?id=${id}`).then((data) => {
-            resolve(data);
-          });
+          axios
+            .get(`https://jservice.io/api/category?id=${id}`)
+            .then((data) => {
+              resolve(data);
+            });
         });
       });
       Promise.all(temp).then((result) => {
