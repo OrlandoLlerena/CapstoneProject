@@ -16,9 +16,12 @@ const Gameboard = () => {
   const [correct, setCorrect] = useState(null);
 
   // populates the category
+
+  const offset = Math.floor(Math.random() * 15000);
+
   const catAndQuestions = async () => {
     const { data } = await axios.get(
-      "http://jservice.io/api/categories?count=5&offset=305"
+      `http://jservice.io/api/categories?count=5&offset=${offset}`
     );
     const categoryIds = data.map((category) => category.id);
     categoryIds.map((id) => {
