@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.01de65bc.chunk.css",
+    "main.js": "/static/js/main.f6283845.chunk.js",
+    "main.js.map": "/static/js/main.f6283845.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.28df2494.js",
+    "runtime-main.js.map": "/static/js/runtime-main.28df2494.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.22a55aee.chunk.js": "/static/js/2.22a55aee.chunk.js",
+    "static/js/2.22a55aee.chunk.js.map": "/static/js/2.22a55aee.chunk.js.map",
+    "static/js/3.0a6b2f3c.chunk.js": "/static/js/3.0a6b2f3c.chunk.js",
+    "static/js/3.0a6b2f3c.chunk.js.map": "/static/js/3.0a6b2f3c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.01de65bc.chunk.css.map": "/static/css/main.01de65bc.chunk.css.map",
+    "static/js/2.22a55aee.chunk.js.LICENSE.txt": "/static/js/2.22a55aee.chunk.js.LICENSE.txt",
+    "static/media/LoginModal.scss": "/static/media/swiss-911-extra-compr9c22f.e2bb4a67.ttf",
+    "static/media/home.scss": "/static/media/jeopardy-game-clipart.hi.a86a06eb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28df2494.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.22a55aee.chunk.js",
+    "static/css/main.01de65bc.chunk.css",
+    "static/js/main.f6283845.chunk.js"
+  ]
+}
