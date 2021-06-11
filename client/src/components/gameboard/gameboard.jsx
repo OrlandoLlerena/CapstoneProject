@@ -82,6 +82,7 @@ const Gameboard = () => {
   };
 
   const handleSubmit = (userAnswer) => {
+    userAnswer.preventDefault();
     if (userAnswer === current.answer) {
       //handle logic if its true
       setScore(current.value + score);

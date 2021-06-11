@@ -53,7 +53,7 @@ const ClueModal = (props) => {
             </div>
           </Modal.Body>
           <button
-            className="custom-submit"
+            className={props.correct === null ? "custom-submit" : "none"}
             type="submit"
             onClick={() => props.handleSubmit(userAnswer)}
           >
