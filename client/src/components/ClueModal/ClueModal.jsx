@@ -4,7 +4,6 @@ import Modal from "react-bootstrap/Modal";
 
 const ClueModal = (props) => {
   const [userAnswer, setUserAnswer] = useState("");
-  const inputRef = useRef(null);
 
   let question = props.current?.question.toUpperCase();
   let answer = props.current?.answer.toUpperCase();
@@ -21,7 +20,13 @@ const ClueModal = (props) => {
         >
           <Modal.Body className="modal-custom">
             <h1 className="clue-info">{question}</h1>
-            <form onSubmit={props.handleSubmit} ref={inputRef}>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+              }}
+              // onSubmit={() => props.handleSubmit(userAnswer)}
+              // onSubmit={props.handleSubmit}
+            >
               <input
                 className="player-answer"
                 type="text"
